@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+    <h2>Student Registration Form</h2>
+    <form action="#" method="post">
+
+        <label>First Name:</label>
+        <input type="text" name="first_name" maxlength="30" required><br><br>
+
+        <label>Last Name:</label>
+        <input type="text" name="last_name" maxlength="30" required><br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required><br><br>
+
+        <label>Email ID:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Mobile Number:</label>
+        <input type="tel" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label>Address:</label>
+        <input type="text" name="address" required><br><br>
+
+        <label>City:</label>
+        <input type="text" name="city" maxlength="30" required><br><br>
+
+        <label>PIN Code:</label>
+        <input type="text" name="pincode" pattern="[0-9]{6}" required><br><br>
+
+        <label>State:</label>
+        <input type="text" name="state" maxlength="30" required><br><br>
+
+        <label>Country:</label>
+        <input type="text" name="country" ><br><br>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" name="hobbies" value="drawing"> Drawing
+        <input type="checkbox" name="hobbies" value="singing"> Singing
+        <input type="checkbox" name="hobbies" value="dancing"> Dancing
+        <input type="checkbox" name="hobbies" value="sketching"> Sketching
+        <input type="checkbox" name="hobbies" value="others"> Others<br><br>
+
+        <h3>Qualification</h3>
+        <table border="1">
+            <tr>
+                <th>Sl.No</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Class X</td>
+                <td><input type="text" name="board_x"></td>
+                <td><input type="text" name="percentage_x" maxlength="5"></td>
+                <td><input type="text" name="passing_year_x" maxlength="4"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input type="text" name="board_xii"></td>
+                <td><input type="text" name="percentage_xii" maxlength="5"></td>
+                <td><input type="text" name="passing_year_xii" maxlength="4"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Graduation</td>
+                <td><input type="text" name="board_grad"></td>
+                <td><input type="text" name="percentage_grad" maxlength="5"></td>
+                <td><input type="text" name="passing_year_grad" maxlength="4"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input type="text" name="board_masters"></td>
+                <td><input type="text" name="percentage_masters" maxlength="5"></td>
+                <td><input type="text" name="passing_year_masters" maxlength="4"></td>
+            </tr>
+        </table><br><br>
+
+        <h3>Courses Applied For:</h3>
+        <input type="radio" name="course" value="BCA"> BCA
+        <input type="radio" name="course" value="B.Com"> B.Com
+        <input type="radio" name="course" value="B.Sc"> B.Sc
+        <input type="radio" name="course" value="BA"> BA<br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
